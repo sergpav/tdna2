@@ -44,8 +44,8 @@ function products($id, $connection, $data=null, $level = 0) {
     var_dump($fetchData);
   }
 }
-
-products(20, $mysqli);
+# RESULT
+//products(20, $mysqli);
 
 // 3 Для заданного списка категорий получить количество предложений товаров в каждой категории;
 
@@ -71,8 +71,10 @@ function breacrump($id, $connection,$data=null) {
     breacrump($fetchData['parent_id'], $connection, $data);
   }
 }
+#RESULT
+//breacrump(29, $mysqli);
 
-breacrump(29, $mysqli);
-
+//=============== 3 TASK ====================
+highlight_file('index.php');
 
 mysqli_close($mysqli);
